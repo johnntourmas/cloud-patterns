@@ -18,7 +18,7 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/books")
     public List<Book> getAllBooks() {
         return bookService.getAllBooks();
